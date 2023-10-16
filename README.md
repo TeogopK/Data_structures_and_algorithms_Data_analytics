@@ -1,2 +1,8 @@
-# Data_structures_and_algorithms_Data_analytics
-Repository with materials for course Data structures and algorithms, programme Data analytics in FMI, Sofia University.
+# Структури от Данни и Алгоритми
+*Зимен семестър 2023/ 2024, спец. Анализ на данни*
+
+## Съдържание:
+
+- [**тема 1**](sem01): Въведение. Особености на Python.
+- [**тема 2**](sem02): Сложност на алгоритми.
+- [**тема 3**](sem03): Алгоритми за сортиране.
