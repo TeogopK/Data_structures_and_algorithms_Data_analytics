@@ -262,8 +262,8 @@ print(arr) # [(0, 'X'), (0, 'Y'), (1, 'X'), (1, 'Y'), (2, 'X'), (2, 'Y')]
 ## Global Interpreter Lock
 
 - механизъм, който не позволява изпълняването на две нишки код паралелно.
-- предотвратява race conditions и гарантира [thread safety](https://python.land/python-concurrency/the-python-gil).
-- паралелизма може да се постигне чрез multiprocessing.
+- предотвратява [race conditions](https://i.imgur.com/opcaC6r.jpg) и гарантира [thread safety](https://python.land/python-concurrency/the-python-gil).
+- паралелизмът може да се постигне чрез multiprocessing.
 - някои външни библиотеки като *Numpy* могат да използват повече от едно ядро.
 
 ---
