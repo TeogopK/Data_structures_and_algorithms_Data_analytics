@@ -106,7 +106,7 @@ print(Xi) # 5
 
 - работи за сортирани и параболични данни
 - *O(log<sub>3</sub>N)* сложност по време
-- подходящ за намиране на единствен максимум/ минимум на функция
+- подходящ за [намиране](https://cp-algorithms.com/num_methods/ternary_search.html) на единствен максимум/ минимум на функция
 
 Сравняват се двата средни елементи с търсения. Ако търсеният елемент е по-малък от първия среден, разглежда се масива отляво на първия среден елемент. Ако търсеният е между двата средни, разглежда се втората третина от масива. Ако търсеният е по-голям от втория среден елемент - разглежда се масива отдясно на втория среден елемент. Отново стъпките се повтарят до намиране на елемента.
 
@@ -208,3 +208,14 @@ X = 60
 Xi = exponential_search(arr, X)
 print(Xi) # 5
 ```
+
+## Задачи за упражнение
+
+- [Search Insert Position](https://leetcode.com/problems/search-insert-position)
+- [First Bad Version](https://leetcode.com/problems/first-bad-version)
+- [Perfect Printer](https://www.hackerrank.com/contests/sda-homework-3/challenges/challenge-2674/problem)
+- [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array)
+- [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)
+
+  
+- [Safe Sort](https://www.hackerrank.com/contests/si-practice-2/challenges/task-1-1-1)
