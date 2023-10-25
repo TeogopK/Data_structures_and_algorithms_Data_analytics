@@ -14,6 +14,8 @@
 
 Решения от [домашно 2](https://hackerrank.com/contests/sda-ad-hw-2-2023) - [тук](https://github.com/TeogopK/SDA-solved/tree/main/Homeworks/hw2).
 
+Решения от [контролно 1](https://www.hackerrank.com/contests/sda-ad-2022-2023-3ewsxf) - [тук](https://github.com/TeogopK/SDA-solved/tree/main/Exams/exam_01).
+
 # Tim sort
 
 - хибриден алгоритъм - комбинира Merge sort и Insertion sort
