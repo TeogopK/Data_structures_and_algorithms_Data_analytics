@@ -1,0 +1,1 @@
+[Условие](https://www.hackerrank.com/contests/sda-ad-2022-2023-3ewsxfw)
