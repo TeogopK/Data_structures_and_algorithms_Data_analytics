@@ -7,17 +7,12 @@
 - Видове сложности
 - Правила за пресмятане на Big O
 - Изчисляване на сложности
-
-## Задачи, които решавахме:
-
-- [Two Sum](https://leetcode.com/problems/two-sum/) - решение [тук](https://github.com/TeogopK/SDA-solved/tree/main/Leetcode/sem_01/two_sum)
-- [Plus One](https://leetcode.com/problems/plus-one/) - решение [тук](https://github.com/TeogopK/SDA-solved/tree/main/Leetcode/sem_01/plus_one)
-  
-Решения от [домашно 1](https://hackerrank.com/contests/sda-ad-hw-1-2023) - [тук](https://github.com/TeogopK/SDA-solved/tree/main/2023-2024/hw1).
   
 ## Въпроси от миналия път/ домашното
 
 - :)
+
+Решения от [домашно 1](https://hackerrank.com/contests/sda-ad-hw-1-2023) - [тук](https://github.com/TeogopK/SDA-solved/tree/main/Homeworks/hw1).
 
 ## Днес ще разгледаме
 
@@ -275,5 +270,8 @@ Counting sort, когато е възможно ползването му, по�
 | Стабилен | да | не | да |
 
 ## Задачи за упражнение (в LeetCode)
+
 - [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 - [Find the Difference](https://leetcode.com/problems/find-the-difference/)
+
+Решения на задачите: [тук](https://github.com/TeogopK/SDA-solved/tree/main/Seminar/sem_03)

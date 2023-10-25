@@ -7,17 +7,12 @@
 - Бавни алгоритми за сортиране
 - Бързи алгоритми за сортиране
 - Сортиране с броене
-
-## Задачи, които решавахме:
-
-- [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) - решение [тук](https://github.com/TeogopK/SDA-solved/tree/main/Leetcode/sem_02/contains_duplicate)
-- [Find the Difference](https://leetcode.com/problems/find-the-difference/) - решение [тук](https://github.com/TeogopK/SDA-solved/tree/main/Leetcode/sem_02/find_the_difference)
-  
-Решения от [домашно 2](https://hackerrank.com/contests/sda-ad-hw-2-2023) - [тук](https://github.com/TeogopK/SDA-solved/tree/main/2023-2024/hw2).
   
 ## Въпроси от миналия път/ домашното
 
 - Кой сортиращ алгоритъм използва методът *sort()* в Python?
+
+Решения от [домашно 2](https://hackerrank.com/contests/sda-ad-hw-2-2023) - [тук](https://github.com/TeogopK/SDA-solved/tree/main/Homeworks/hw2).
 
 # Tim sort
 
@@ -217,5 +212,6 @@ print(Xi) # 5
 - [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array)
 - [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)
 
-  
 - [Safe Sort](https://www.hackerrank.com/contests/si-practice-2/challenges/task-1-1-1)
+
+Решения на задачите: [тук](https://github.com/TeogopK/SDA-solved/tree/main/Seminar/sem_04)
