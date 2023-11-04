@@ -294,4 +294,9 @@ print(dlist[1]) # 2
 
 - [Radio Transmitters](https://www.hackerrank.com/challenges/hackerland-radio-transmitters)
 
+---
+- [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list)
+- [Linked List Random Node](https://leetcode.com/problems/linked-list-random-node)
+- [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)
+
 Решения на задачите: [тук](https://github.com/TeogopK/SDA-solved/tree/main/Seminar/sem_05)
