@@ -1,10 +1,9 @@
-# https://leetcode.com/problems/odd-even-linked-list/description/
-
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+
 class Solution:
     def oddEvenList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         if head == None:
@@ -32,7 +31,6 @@ class Solution:
                 last_even.next = None
 
             idx += 1
-            # current = current.next
 
         last_odd.next = first_even
         last_even.next = None
