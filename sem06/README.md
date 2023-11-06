@@ -27,8 +27,6 @@
 - Операциите са *pushfront()* и *popfront()* - *O(1)* сложност по време.
 - *LIFO* - Last In First Out.
 
-Готови имплементации: *list*, *deque*, *LIFOqueue* ([синхронна колекция](https://docs.python.org/3/library/queue.html)).
-
 ## Queue (Опашка)
 
 - Реализация чрез **едносвързан** списък, на който пазим опашката и главата. 
