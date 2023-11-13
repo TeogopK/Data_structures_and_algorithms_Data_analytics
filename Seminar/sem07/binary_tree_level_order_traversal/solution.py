@@ -6,7 +6,6 @@
 #         self.right = right
 
 from queue import Queue
-    
 
 def bfs(root):
     return_lst = []
@@ -28,7 +27,6 @@ def bfs(root):
         
         q = q_copy
         return_lst.append(lst)
-    
 
     return return_lst
 

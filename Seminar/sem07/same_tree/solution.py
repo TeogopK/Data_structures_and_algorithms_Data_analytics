@@ -10,7 +10,7 @@ def same_tree_dfs(first_tree, second_tree):
         return True
     
     if first_tree is None or second_tree is None or first_tree.val != second_tree.val:
-        return 0
+        return False
 
     return (same_tree_dfs(first_tree.left, second_tree.left) and same_tree_dfs(first_tree.right, second_tree.right))
 
