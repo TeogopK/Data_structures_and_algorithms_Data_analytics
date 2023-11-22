@@ -5,7 +5,19 @@ class Node:
         self.val = val
         self.left = None
         self.right = None
+        self.level = None
+
+def insert(root, val):
+    if not root:
+        return Node(val)
+    
+    if root.val < val:
+        root.right = insert(root.right, val)
+    else:
+        root.left = insert(root.left, val)
         
+    return root
+
 def bfs(root):
     if not root:
         return [0]
@@ -26,23 +38,15 @@ def bfs(root):
                 q.append(current.right)
 
     return counts
-        
-def insert(root, val):
-    if not root:
-        return Node(val)
-    
-    if root.val < val:
-        root.right = insert(root.right, val)
-    else:
-        root.left = insert(root.left, val)
-        
-    return root
-        
+
+def count_nodes(root):
+    counts = bfs(root)
+    print(*counts, sep=';')
+
 arr = list(map(int, input().split()))[1:]
 
 root = None
-for x in arr:
-    root = insert(root, x)
- 
-counts = bfs(root)
-print(*counts, sep=';')
+for value in arr:
+    root = insert(root, value)
+
+count_nodes(root)

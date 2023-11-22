@@ -3,7 +3,18 @@ class Node:
         self.val = val
         self.left = None
         self.right = None
+
+def insert(root, val):
+    if not root:
+        return Node(val)
+    
+    if root.val < val:
+        root.right = insert(root.right, val)
+    else:
+        root.left = insert(root.left, val)
         
+    return root
+
 def dfs(root, result):
     if not root:
         return
@@ -15,41 +26,17 @@ def dfs(root, result):
     if root.right:
         result[1] += 1
         dfs(root.right, result)
-        
-def insert(root, val):
-    if not root:
-        return Node(val)
-    
-    if root.val < val:
-        root.right = insert(root.right, val)
-    else: 
-        root.left = insert(root.left, val)
-        
-    return root
-        
-def get_input():
-    """
-    If the example test case was not on two lines input can be accessed as:
-    arr = list(map(int, input().split()))[1:]
-    """
-    
-    arr = list(map(int, input().split()))
 
-    if len(arr) == 1:
-        return list(map(int, input().split()))
-    
-    return arr[1:]
+def left_right(root):
+    result = {-1: 0, 1: 0}
+    dfs(root, result)
 
-arr = get_input()
+    print(f'[{result[-1]},{result[1]}]')
+
+arr = list(map(int, input().split()))[1:]
 
 root = None
-for x in arr:
-    root = insert(root, x)
- 
-result = {-1: 0, 1: 0}
-dfs(root, result)
+for value in arr:
+    root = insert(root, value)
 
-left = result[-1]
-right = result[1]
-
-print(f'[{left},{right}]')
+left_right(root)
