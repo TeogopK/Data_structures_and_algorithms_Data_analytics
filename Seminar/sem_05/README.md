@@ -1,4 +1,4 @@
-Условия:
+## Условия:
 
 - [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)
 - [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)

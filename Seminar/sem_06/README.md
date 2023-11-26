@@ -1,4 +1,5 @@
-Условия:
+## Условия:
+
 - [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare)
 - [Baseball Game](https://leetcode.com/problems/baseball-game)
 - [Valid Parentheses](https://leetcode.com/problems/valid-parentheses)

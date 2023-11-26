@@ -1,4 +1,4 @@
-Условия:
+## Условия:
 
 - [Move Zeroes](https://leetcode.com/problems/move-zeroes/)
 - [Two Sum](https://leetcode.com/problems/two-sum/)
