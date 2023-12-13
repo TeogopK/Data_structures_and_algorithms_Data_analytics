@@ -1,0 +1,1 @@
+[Условие](https://www.hackerrank.com/sda-2023-2024-test4-ad)
