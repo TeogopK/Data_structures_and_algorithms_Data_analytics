@@ -9,3 +9,4 @@
 - [**домашно 7**](https://hackerrank.com/contests/sda-ad-hw-7-2023) - решения [тук](hw7)
 - [**домашно 8**](https://hackerrank.com/contests/sda-ad-hw-8-2023) - решения [тук](hw8)
 - [**домашно 9**](https://hackerrank.com/contests/sda-ad-hw-9-2023) - решения [тук](hw9)
+- [**домашно 10**](https://hackerrank.com/contests/sda-ad-hw-10-2023) - решения [тук](hw10)
