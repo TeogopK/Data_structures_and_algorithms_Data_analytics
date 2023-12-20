@@ -31,6 +31,11 @@
 ## Binary Tree (Двоично дърво)
 
 - Дърво, чиито възли имат най-много двама наследника. Най-често се обозначават ляв и десен (left, right).
+  
+Пример:
+
+![Binary tree example](media/binary_tree_example.png)
+
 
 ## Binary Search Tree (Двоично дърво за търсене)
 
@@ -41,21 +46,103 @@
     - Най-малкият елемент в дясното му поддърво е по-голям от стойността в дадения възел.
     - И лявото поддърво, и дясното поддърво са двоични дървета за търсене.
 
+Примерно двоично дърво за търсене:
+
+![Binary search tree example](media/binary_search_tree.png)
+
 ## Алгоритми за обхождане
 
 ### Depth-first search (Обхождане в дълбочина)
 
-- Inorder traversal - извежда във възходящ ред стойностите на дървото
-  - Ляво - Корен - Дясно 
-- Preorder traversal 
-  - Корен - Ляво - Дясно
-- Postorder traversal 
-  - Ляво - Дясно - Корен
-  
-### Breadth-first search (Обхождане в широчина)
+Алгоритъмът започва от корена и обхожда колкото се може по-надълбоко в даден клон, преди да започне да се връща наобратно.
 
-- Level order traversal
-    - корен - дълбочина 1 - дълбочина 2 - ...
+#### Inorder traversal
+- *Ляво - Корен - Дясно* 
+- Извежда във възходящ ред стойностите на двоично дърво за търсене.
+
+```python
+def inorder(current):
+    if current is None:
+        return
+    
+    inorder(current.left)
+    print(current.val, end=' ') # 0 2 3 4 5 8 
+    inorder(current.right)
+```
+
+#### Preorder traversal 
+- Коренът е винаги първи.
+- Схема: *Корен - Ляво - Дясно*
+
+```python
+def preorder(current):
+    if current is None:
+        return
+    
+    print(current.val, end=' ') # 3 2 0 5 4 8
+    preorder(current.left)
+    preorder(current.right)
+```
+
+#### Postorder traversal
+  - Коренът е винаги последен. 
+  - *Ляво - Дясно - Корен*
+
+```python
+def postorder(current):
+    if current is None:
+        return
+    
+    postorder(current.left)
+    postorder(current.right)
+    print(current.val, end=' ') # 0 2 4 8 5 3 
+```
+
+---
+
+### Breadth-first search (Обхождане в широчина)
+- Нарича се още *Level order traversal*.
+- *корен - дълбочина 1 - дълбочина 2 - ...*
+
+```python
+from collections import deque
+
+def bfs_deque(root):
+    q = deque([root])
+    level = 0
+
+    while q:
+        length = len(q)
+        print(f"Level {level}:", end=' ')
+
+        for _ in range(length):
+            current = q.popleft()
+            print(current.val, end=' ')
+
+            if current.left:
+                q.append(current.left)
+            if current.right:
+                q.append(current.right)
+
+        print()
+        level += 1
+        
+"""
+Output:
+Level 0: 3 
+Level 1: 2 5 
+Level 2: 0 4 8
+"""
+```
+
+Разяснение на алгоритъма:
+1. Обхожда първото ниво - корена, като добавя неговите наследници в опашка.
+2. Преминава на следващото ниво - децата на корена. Текущият брой на елементите в опашката е броят на децата.
+3. Премахва първия елемент от опашката (първото дете) и добавя неговите наследници (внуци) в края на опашката.
+4. Продължава да повтаря *стъпка 3*, докато не премине през всички деца от *стъпка 2*.
+5. След преминаването през всички деца, в опашката се съдържат единствено върхове добавени от второто ниво - това са "внуците" на корена.
+6. Стъпките се повтарят до изчерпване на възлите в дървото - когато се изпразни опашката с възли за обхождане.
+   
 
 ## Сложност по време на основните операции:
 
