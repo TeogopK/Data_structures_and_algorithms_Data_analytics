@@ -29,6 +29,7 @@
 Пример:
 
 ![Directed Graph](media/directed_graph.png)
+
 Съществува път от 0 до 4, но не и от 4 до 0.
 
 ### Неориентиран граф (Undirected graph)
@@ -38,6 +39,7 @@
 Пример:
 
 ![Undirected graph](media/undirected_graph.png)
+
 Съществува път както от 0 до 4, така и от 4 до 0.
 
 ## Представяне на граф
