@@ -87,4 +87,4 @@ Aналогична на *set*-a, но се състои от ключове, к
 - [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k)
 - [0-1 Subarray](https://www.hackerrank.com/contests/sda-homework-9/challenges/0-1-1)
 
-Решения на задачите: [тук](https://github.com/TeogopK/SDA-solved/tree/main/Seminar/sem_11)
+Решения на задачите: [тук](/Tasks/tasks_11)

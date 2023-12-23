@@ -285,4 +285,4 @@ def brothers(N, M):
 - [Plus One](https://leetcode.com/problems/plus-one/)
 - [Rotate Image](https://leetcode.com/problems/rotate-image/)
 
-Решения на задачите: [тук](https://github.com/TeogopK/SDA-solved/tree/main/Seminar/sem_02)
+Решения на задачите: [тук](/Tasks/tasks_02)

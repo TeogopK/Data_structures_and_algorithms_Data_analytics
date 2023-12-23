@@ -274,4 +274,4 @@ Counting sort, когато е възможно ползването му, по�
 - [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 - [Find the Difference](https://leetcode.com/problems/find-the-difference/)
 
-Решения на задачите: [тук](https://github.com/TeogopK/SDA-solved/tree/main/Seminar/sem_03)
+Решения на задачите: [тук](/Tasks/tasks_03)

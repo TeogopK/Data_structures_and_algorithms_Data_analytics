@@ -72,4 +72,4 @@
 - [Count Number of Bad Pairs](https://leetcode.com/problems/count-number-of-bad-pairs)
 - [MacBook Cafes](https://www.hackerrank.com/contests/si-practice-7/challenges/brand-new)
 
-Решения на задачите: [тук](https://github.com/TeogopK/SDA-solved/tree/main/Seminar/sem_08)
+Решения на задачите: [тук](/Tasks/tasks_08)

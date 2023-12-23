@@ -216,4 +216,4 @@ print(Xi) # 5
 
 - [Safe Sort](https://www.hackerrank.com/contests/si-practice-2/challenges/task-1-1-1)
 
-Решения на задачите: [тук](https://github.com/TeogopK/SDA-solved/tree/main/Seminar/sem_04)
+Решения на задачите: [тук](/Tasks/tasks_04)

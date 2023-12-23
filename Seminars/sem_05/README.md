@@ -301,4 +301,4 @@ print(dlist[1]) # 2
   
 - [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)
 
-Решения на задачите: [тук](https://github.com/TeogopK/SDA-solved/tree/main/Seminar/sem_05)
+Решения на задачите: [тук](/Tasks/tasks_05)

@@ -197,4 +197,4 @@ Level 2: 0 4 8
 - [Symmetric Tree](https://leetcode.com/problems/symmetric-tree)
 - [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal)
 
-Решения на задачите: [тук](https://github.com/TeogopK/SDA-solved/tree/main/Seminar/sem_07)
+Решения на задачите: [тук](/Tasks/tasks_07)

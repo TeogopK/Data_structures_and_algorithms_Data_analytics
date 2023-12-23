@@ -23,4 +23,4 @@
 - [In-person learning](https://www.hackerrank.com/contests/sda-homework-8/challenges/challenge-2728/problem)
 - [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers)
 
-Решения на задачите: [тук](https://github.com/TeogopK/SDA-solved/tree/main/Seminar/sem_10)
+Решения на задачите: [тук](/Tasks/tasks_10)

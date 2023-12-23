@@ -109,4 +109,4 @@ while not pq.empty():
 - [Banitsa Shop](https://www.hackerrank.com/contests/sda-hw-8-2021/challenges/fullstack-developer)
 - [Find the Running Median](https://www.hackerrank.com/challenges/find-the-running-median/problem)
 
-Решения на задачите: [тук](https://github.com/TeogopK/SDA-solved/tree/main/Seminar/sem_09)
+Решения на задачите: [тук](/Tasks/tasks_09)

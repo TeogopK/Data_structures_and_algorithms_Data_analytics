@@ -63,4 +63,4 @@
 - [Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls)
 - [Number of Students Unable to Eat Lunch](https://leetcode.com/problems/number-of-students-unable-to-eat-lunch)
 
-Решения на задачите: [тук](https://github.com/TeogopK/SDA-solved/tree/main/Seminar/sem_06)
+Решения на задачите: [тук](/Tasks/tasks_06)
