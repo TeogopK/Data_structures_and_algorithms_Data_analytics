@@ -12,7 +12,7 @@
 
 - :)
 
-Решения от [домашно 8](https://hackerrank.com/contests/sda-ad-hw-8-2023) - [тук](https://github.com/TeogopK/SDA-solved/tree/main/Homeworks/hw8).
+Решения от [домашно 8](https://hackerrank.com/contests/sda-ad-hw-8-2023) - [тук](/Homeworks/hw_08).
 
 ## Задачи за упражнение
 

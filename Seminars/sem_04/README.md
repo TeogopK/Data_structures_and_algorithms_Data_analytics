@@ -12,7 +12,7 @@
 
 - Кой сортиращ алгоритъм използва методът *sort()* в Python?
 
-Решения от [домашно 2](https://hackerrank.com/contests/sda-ad-hw-2-2023) - [тук](https://github.com/TeogopK/SDA-solved/tree/main/Homeworks/hw2).
+Решения от [домашно 2](https://hackerrank.com/contests/sda-ad-hw-2-2023) - [тук](/Homeworks/hw_02).
 
 Решения от [контролно 1](https://www.hackerrank.com/contests/sda-ad-2022-2023-3ewsxf) - [тук](https://github.com/TeogopK/SDA-solved/tree/main/Exams/exam_01).
 

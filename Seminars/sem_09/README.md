@@ -10,7 +10,7 @@
 
 - Какво е Heap Sort от упражнение 3?
 
-Решения от [домашно 7](https://hackerrank.com/contests/sda-ad-hw-7-2023) - [тук](https://github.com/TeogopK/SDA-solved/tree/main/Homeworks/hw7).
+Решения от [домашно 7](https://hackerrank.com/contests/sda-ad-hw-7-2023) - [тук](/Homeworks/hw_07).
 
 ## Днес ще разгледаме
 

@@ -14,7 +14,7 @@
 
 - :)
 
-Решения от [домашно 3](https://hackerrank.com/contests/sda-ad-hw-3-2023) - [тук](https://github.com/TeogopK/SDA-solved/tree/main/Homeworks/hw3).
+Решения от [домашно 3](https://hackerrank.com/contests/sda-ad-hw-3-2023) - [тук](/Homeworks/hw_03).
 
 ## Днес ще разгледаме
 
