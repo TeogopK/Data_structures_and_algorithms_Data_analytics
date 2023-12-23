@@ -10,7 +10,7 @@
 
 - :)
 
-Решения от [контролно 4](https://www.hackerrank.com/sda-2023-2024-test4-ad) - [тук](https://github.com/TeogopK/SDA-solved/tree/main/Exams/exam_04).
+Решения от [контролно 4](https://www.hackerrank.com/sda-2023-2024-test4-ad) - [тук](/Exams/exam_04).
 
 ## Днес ще разгледаме
 

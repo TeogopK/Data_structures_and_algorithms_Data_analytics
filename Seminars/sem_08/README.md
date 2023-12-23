@@ -11,7 +11,7 @@
 
 - :)
 
-Решения от [контролно 3](https://www.hackerrank.com/contests/sda2023-2024-test3-ad)  с вече коригирани условия  - [тук](https://github.com/TeogopK/SDA-solved/tree/main/Exams/exam_03).
+Решения от [контролно 3](https://www.hackerrank.com/contests/sda2023-2024-test3-ad)  с вече коригирани условия  - [тук](/Exams/exam_03).
 
 Решения от [домашно 6](https://hackerrank.com/contests/sda-ad-hw-6-2023) - [тук](/Homeworks/hw_06).
 

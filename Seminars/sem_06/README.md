@@ -12,7 +12,7 @@
 
 - :)
 
-Решения от [контролно 2](https://www.hackerrank.com/contests/sda-2023-2024-ad-2ws3e) - [тук](https://github.com/TeogopK/SDA-solved/tree/main/Exams/exam_02).
+Решения от [контролно 2](https://www.hackerrank.com/contests/sda-2023-2024-ad-2ws3e) - [тук](/Exams/exam_02).
 
 Решения от [домашно 4](https://hackerrank.com/contests/sda-ad-hw-4-2023) - [тук](/Homeworks/hw_04).
 
