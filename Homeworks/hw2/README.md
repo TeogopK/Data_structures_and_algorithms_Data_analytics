@@ -1,0 +1,1 @@
+[Условие](https://hackerrank.com/contests/sda-ad-hw-2-2023)
