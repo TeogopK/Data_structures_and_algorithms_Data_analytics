@@ -10,15 +10,9 @@
 - Bigint 
 - List comprehension
 - GIL (Global Interpreter Lock)
-
-## Задачи, които решавахме:
-
-- [Съквартиранти](https://www.hackerrank.com/contests/sda-hw-1-2022/challenges/1-410) - решение [тук](https://github.com/TeogopK/SDA-solved/tree/main/2022-2023/hw1/task1)
-- [Casino Royale](https://www.hackerrank.com/contests/sda-hw-2-2022/challenges/1-146-1) - решение [тук](https://github.com/TeogopK/SDA-solved/tree/main/2022-2023/hw2/task1)
-  
-Решенията на задачи от час и други ще намерите в [репото](https://github.com/TeogopK/SDA-solved) с решения.
   
 ## Днес ще разгледаме
+
 - Видове сложности
 - Правила за смятане на Big O изрази
 - Основи при изчисляване на сложности
@@ -144,6 +138,7 @@ print(even_arr) # [0, 2, 4, 6, 8]
 ```
 
 ## Видове сложности:
+
 - константа - *O(1)*
 - логаритмична - *О(logN)*
 - линейна - *O(N)*

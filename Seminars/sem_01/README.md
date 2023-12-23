@@ -269,3 +269,11 @@ print(arr) # [(0, 'X'), (0, 'Y'), (1, 'X'), (1, 'Y'), (2, 'X'), (2, 'Y')]
 ---
 
 Всички снипети са налични в [тетрадката](playground_01.ipynb).
+
+## Задачи за запознаване с платформата HackerRank
+
+- [Solve Me First](https://www.hackerrank.com/challenges/solve-me-first/problem)
+- [Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum/problem)
+- [Roommates](https://www.hackerrank.com/contests/sda-hw-1-2022/challenges/1-410)
+
+Решения на задачите: [тук](/Tasks/tasks_01)
