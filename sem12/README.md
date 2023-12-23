@@ -97,6 +97,52 @@ graph = {
 - Стои в основата на по-сложни алгоритми като Алгоритъм на Дийкстра.
 - *O(V + E)* сложност по време.
 
+```python
+from collections import deque
+
+def bfs(starting_vertex, graph):
+    q = deque([starting_vertex])
+    visited = set([starting_vertex])
+
+    distance = 0
+
+    while q:
+        print(f"At distance {distance}:")
+        
+        for _ in range(len(q)):
+            current = q.popleft()
+            print(current)
+
+            for neighbor in graph[current]:
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    q.append(neighbor)
+        
+        distance += 1
+
+bfs(0, graph)
+```
+
+Пример за следния граф:
+
+![Example graph for traversing](media/graph_for_traversing.png)
+
+```python
+# Outputs:
+At distance 0:
+0
+At distance 1:
+1
+2
+3
+At distance 2:
+4
+5
+At distance 3:
+6
+
+```
+
 ## Depth First Search
 
 Алгоритъм:
@@ -109,15 +155,87 @@ graph = {
 - Удобен за намиране на компоненти на свързаност, проверка за цикъл в граф и топологична сортировка. (*Забележка: Възможно е и използването на BFS за решаване на горните проблеми.)
 - *O(V + E)* сложност по време.
 
+```python
+def dfs(current, visited, graph):
+    print(current)
+
+    for neighbor in graph[current]:
+        if neighbor not in visited:
+            visited.add(neighbor) # 0 1 2 4 5 3 6 
+            dfs(neighbor, visited, graph)
+```
+
 ## Топологична сортировка
 
 - Подрежда върховете, така че всеки възел се намира преди наследниците си, към които има ребра.
 - Работи за [DAG](https://en.wikipedia.org/wiki/Directed_acyclic_graph) (Directed Acyclic Graph).
 
-[Пример:](https://assets.leetcode.com/users/images/63bd7ad6-403c-42f1-b8bb-2ea41e42af9a_1613794080.8115625.png)
+[Пример:](https://leetcode.com/discuss/general-discussion/1078072/introduction-to-topological-sort)
 
 ![Topological Sorting of graph - example](https://assets.leetcode.com/users/images/63bd7ad6-403c-42f1-b8bb-2ea41e42af9a_1613794080.8115625.png)
 
+```python
+def topological_dfs(current, stack, visited, graph):
+    visited.add(current)
+
+    for neighbor in graph[current]:
+        if neighbor not in visited:
+            visited.add(neighbor)
+            topological_dfs(neighbor, stack, visited, graph)
+
+    stack.append(current)
+
+def topological_sort(graph):
+    stack = []
+    visited = set()
+
+    for vertex in graph:
+        if vertex in visited:
+            continue
+        topological_dfs(vertex, stack, visited, graph)
+
+    stack.reverse()
+    return stack
+
+topological_sort(graph_topological) # [1, 4, 2, 3, 5, 6]
+```
+
+Имплементация на топологична сортировка с BFS, итеративно DFS и разглеждане на основни проблеми за графи в [playground-а](playground_12.ipynb).
+
+## Съвети при решаване на задачи
+
+### *Recursion depth limit*
+
+При решаване на задачи с големи графи съществува възможност за увеличаване на ограничението за максимална дълбочина на рекурсията в Python чрез следния код:
+
+```python
+import sys
+sys.setrecursionlimit(10_000)
+```
+
+### *Defaultdict* за представянето на граф
+
+Невнимателното представянето на граф чрез *defaultdict* може да доведе до липса на самостоятелните върхове, които не са свързани с нито едно ребро. 
+
+- Така граф, който не е свързан, поради наличието на единични самостоятелни върхове, ще изглежда свързан.
+- Итерирането през всички върхове на графа може да доведе до *RuntimeError: dictionary changed size during iteration*, тъй като ще се създаде нов ключ при итерирането през децата на самостоятелен връх.
+  
+#### Как да избегнем проблема?
+
+- Чрез предварително добавяне на всеки връх. Това може да се случи директно с обикновено *dictionary*.
+
+    ```python
+    graph = {node: [] for node in range(V)}
+    ```
+
+- Чрез копирването на ключовете, по които ще итерираме, в отделен списък.
+  
+    ```python
+    for node in list(graph.keys()):
+        dfs(node, graph)
+    ```
+
+[Пример](https://github.com/TeogopK/SDA-solved/tree/main/Seminar/sem_12/cyclic_graph) от решенията.
 
 ## Задачи за упражнение
 
@@ -126,3 +244,8 @@ graph = {
 - [Cyclic graph](https://www.hackerrank.com/contests/sda-homework-10/challenges/-1-12)
 - [Course Schedule II](https://leetcode.com/problems/course-schedule-ii)
 
+BFS и DFS на граф надграждат съответните имплементации за дървета, разгледани в [тема 7](/sem07).
+
+Задачите използват алгоритмите показани подробно в текущия [playground](playground_12.ipynb).
+
+Решения на задачите: [тук](https://github.com/TeogopK/SDA-solved/tree/main/Seminar/sem_12)
