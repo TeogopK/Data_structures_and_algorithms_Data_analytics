@@ -98,6 +98,32 @@ def postorder(current):
     print(current.val, end=' ') # 0 2 4 8 5 3 
 ```
 
+#### Iterative DFS
+Обхождането в дълбочина може да се направи и без рекурсия чрез използването на стек:
+
+```python
+def inorder_stack(root):
+    stack = []
+    current = root
+
+    while stack or current:
+        if current:
+            stack.append(current) 
+            current = current.left
+        else:
+            current = stack.pop()
+            print(current.val, end=' ') # 0 2 3 4 5 8 
+            current = current.right
+```
+
+#### Recursion limit
+Възможно е да се увеличи ограничението за максимална дълбочина на рекурсия в Python, вместо да се пишат итеративни варианти на алгоритмите, чрез следния код:
+
+```python
+import sys
+sys.setrecursionlimit(10_000)
+```
+
 ---
 
 ### Breadth-first search (Обхождане в широчина)
