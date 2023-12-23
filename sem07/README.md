@@ -102,7 +102,7 @@ def postorder(current):
 Обхождането в дълбочина може да се направи и без рекурсия чрез използването на стек:
 
 ```python
-def inorder_stack(root):
+def iterative_inorder(root):
     stack = []
     current = root
 
@@ -133,7 +133,7 @@ sys.setrecursionlimit(10_000)
 ```python
 from collections import deque
 
-def bfs_deque(root):
+def bfs(root):
     q = deque([root])
     level = 0
 
