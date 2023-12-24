@@ -5,7 +5,7 @@
 
 
 | # | Тема | Задачи с решения | Условие на домашно | Решения на домашно  |
-|-|-|-|-|-|
+|:-:|:-|:-:|:-:|:-:|
 | 1 | [Въведение. Особености на Python.](Seminars/sem_01)| [задачи](Tasks/tasks_01)| - | - |
 | 2 | [Сложност на алгоритми.](Seminars/sem_02)          | [задачи](Tasks/tasks_02)| [условие](https://www.hackerrank.com/contests/sda-ad-hw-1-2023)           | [решения](Homeworks/hw_01)                                       |
 | 3 | [Алгоритми за сортиране.](Seminars/sem_03)         | [задачи](Tasks/tasks_03)| [условие](https://www.hackerrank.com/contests/sda-ad-hw-2-2023)           | [решения](Homeworks/hw_02)                                       |
