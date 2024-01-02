@@ -18,3 +18,4 @@
 | 10 | [Упражнение върху задачи.](Seminars/sem_10)       | [задачи](Tasks/tasks_10)| - | - |
 | 11 | [Хештаблица.](Seminars/sem_11)                    | [задачи](Tasks/tasks_11)| [условие](https://www.hackerrank.com/contests/sda-ad-hw-9-2023)          | [решения](Homeworks/hw_09)                                       |
 | 12 | [Обхождане на граф.](Seminars/sem_12)             | [задачи](Tasks/tasks_12)| [условие](https://www.hackerrank.com/contests/sda-ad-hw-10-2023)          | [решения](Homeworks/hw_10)                                       |
+| 13 | [Най-кратък път в граф.](Seminars/sem_13)         | [задачи](Tasks/tasks_13)| - | - |
