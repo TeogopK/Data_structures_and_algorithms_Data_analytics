@@ -1,4 +1,4 @@
-"""Solution finding the longest paths using Dijkstra with negative weights."""
+"""Modified 'Dijkstra' solution (Bellman-Ford)"""
 from heapq import heappop, heappush
 
 def dijkstra(S, F, V, graph):

@@ -1,18 +1,30 @@
-from heapq import heappop, heappush
+"""Representing the graph with set of edges due to duplicated edges."""
 
-def dijkstra(start, V, graph,):
-    distances = [-1] * (V + 1)
+from heapq import heappop, heappush
+INF = -1
+
+def dijkstra(start, V, graph):
+    distances = [INF] * (V + 1)
     distances[start] = 0
+
+    visited = set()
     
     pq = [(0, start)]
     
     while pq:
         total_weight, current = heappop(pq)
         
+        if current in visited:
+            continue
+        visited.add(current)
+        
         for neighb, added_weight in graph[current]:
+            if neighb in visited:
+                continue
+                
             new_weight = total_weight + added_weight
             
-            if distances[neighb] == -1 or new_weight < distances[neighb]:
+            if distances[neighb] == INF or new_weight < distances[neighb]:
                 distances[neighb] = new_weight
                 heappush(pq, (new_weight, neighb))
     
