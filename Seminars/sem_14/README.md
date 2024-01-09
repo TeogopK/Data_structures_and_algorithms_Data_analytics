@@ -40,9 +40,11 @@
 ## Алгоритъм на Прим (Prim's algorithm)
 
 - Намира минимално покриващо дърво на граф.
-- Започва от даден връх и добавя реброто с най-малка тежест до съседен връх, който все още не част от дървото.
+- Започва от даден връх и добавя реброто с най-малка тежест до съседен връх, който все още не е част от дървото.
 - Сложността по време зависи от структурата за извличане на реброто с най-малка тежест.
 - При използването на *Binary Heap* сложността е *O(E\*logV)*.
+
+![Prim's algorithm creating a MST of a graph, step by step example.](media/prims_algorithm_example.png)
 
 ```python
 def prim(start, V, graph):
@@ -65,10 +67,13 @@ def prim(start, V, graph):
                             
             heappush(pq, (weight, neighb))
     
-    return mst_weight # 13
+    return mst_weight
+
+prim(5, 5, graph) # 13
 ```
 
 ## Алгоритъм на Крускал (Kruskal's algorithm)
+
 
 
 ## Задачи за упражнение
