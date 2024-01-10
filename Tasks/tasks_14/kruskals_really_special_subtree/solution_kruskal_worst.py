@@ -4,11 +4,8 @@ sys.setrecursionlimit(100_000)
 def find(x, parents):
     if parents[x] == x:
         return x
-    
-    furthest_parent = find(parents[x], parents)
-    parents[x] = furthest_parent
 
-    return furthest_parent
+    return find(parents[x], parents)
 
 def union(x, y, parents):
     x_root = find(x, parents)
@@ -31,6 +28,5 @@ def kruskal(V, edges):
 N, M = map(int, input().split())
 edges = [tuple(map(int, input().split())) for _ in range(M)]
     
-start = int(input())
 mst_weight = kruskal(N, edges)
 print(mst_weight)

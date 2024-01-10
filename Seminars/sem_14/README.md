@@ -75,12 +75,52 @@ prim(5, 5, graph) # 13
 ![Prim's algorithm creating a MST of a graph, step by step example.](media/prims_algorithm_example.png)
 
 ## Алгоритъм на Крускал (Kruskal's algorithm)
-![Alt text](media/mst_vs_dijkstra.png)
+
 - Намира минимално покриващо дърво на граф.
 - Сортира ребрата по минимална тежест, като на всяка стъпка добавя реброто с най-малка тежест, което няма да създаде цикъл в графа.
+- Използва структурата *Disjoint set* за оптимална проверка за цикличност.
 - Сложност по време *O(E\*logE)* заради сортирането на всички ребра.
 - При *dense* граф, когато *Е = V<sup>2</sup>*, *O(ElogE) = O(ElogV<sup>2</sup>) = O(2ElogV) = O(ElogV)*
-- 
+
+Подробно описание как работи Disjoint-set (Union-find) структурата в [playground-а](playground_14.ipynb).
+
+```python
+def find(x, parents):
+    if parents[x] == x:
+        return x
+    
+    furthest_parent = find(parents[x], parents)
+    parents[x] = furthest_parent
+
+    return furthest_parent
+
+def union(x, y, parents, rank):
+    x_root = find(x, parents)
+    y_root = find(y, parents)
+
+    if rank[x_root] < rank[y_root]:
+        parents[x_root] = y_root
+    elif rank[x_root] > rank[y_root]:
+        parents[y_root] = x_root
+    else:
+        parents[x_root] = y_root
+        rank[y_root] += 1
+
+def kruskal(V, edges):
+    edges.sort(key=lambda x: x[2])
+    parents = [i for i in range(V + 1)]
+    rank = [0] * (V + 1)
+    mst_weight = 0
+
+    for x, y, w in edges:
+        if find(x, parents) != find(y, parents):
+            mst_weight += w
+            union(x, y, parents, rank)
+
+    return mst_weight
+
+kruskal(5 , graph_list_of_edges) # 13
+```
 
 ![Kruskal's algorithm creating a MST of a graph, step by step example.](media/kruskals_algorithm_example.png)
 
@@ -88,5 +128,6 @@ prim(5, 5, graph) # 13
 ## Задачи за упражнение
 
 - [Prim's (MST) : Special Subtree](https://www.hackerrank.com/challenges/primsmstsub/problem)
+- [Kruskal (MST): Really Special Subtree](https://www.hackerrank.com/challenges/kruskalmstrsub/problem)
 
 Решения на задачите: [тук](/Tasks/tasks_14)
