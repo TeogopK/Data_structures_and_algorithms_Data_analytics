@@ -82,8 +82,6 @@ prim(5, 5, graph) # 13
 - Сложност по време *O(E\*logE)* заради сортирането на всички ребра.
 - При *dense* граф, когато *Е = V<sup>2</sup>*, *O(ElogE) = O(ElogV<sup>2</sup>) = O(2ElogV) = O(ElogV)*
 
-Подробно описание как работи Disjoint-set (Union-find) структурата в [playground-а](playground_14.ipynb).
-
 ```python
 def find(x, parents):
     if parents[x] == x:
@@ -124,6 +122,7 @@ kruskal(5 , graph_list_of_edges) # 13
 
 ![Kruskal's algorithm creating a MST of a graph, step by step example.](media/kruskals_algorithm_example.png)
 
+Подробно описание как работи Disjoint-set (Union-find) структурата в [playground-а](playground_14.ipynb).
 
 ## Задачи за упражнение
 
