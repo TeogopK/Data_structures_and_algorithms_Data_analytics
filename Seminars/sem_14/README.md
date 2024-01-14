@@ -45,6 +45,8 @@
 - При използването на *Binary Heap* сложността е *O(E\*logV)*.
 
 ```python
+from heapq import heappush, heappop
+
 def prim(start, V, graph):
     visited = set()
     pq = [(0, start)]
