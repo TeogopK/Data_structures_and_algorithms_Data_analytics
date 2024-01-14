@@ -57,12 +57,9 @@
 - Хамилтоновият цикъл е път, който минава всеки един **връх** на даден на даден граф само по един път, като свършва във върха, от който е тръгнал.
 - Проблемът за намирането на минимален Хамилтонов цикъл е известен като *The Traveling Salesman Problem* (*NP hard problem*).
 
-Пример:
-
 ![Hamiltonian path and cycle example](media/hamiltonian_path_and_cycle.png)
 
-- Хамилтонов път - *ABCED*
-- Хамилтонов цикъл - *ABDECA*
+Пример за Хамилтонов път - *ABCED*, за Хамилтонов цикъл - *ABDECA*.
 
 ## P, NP, NP complete, NP hard проблеми
 
@@ -101,7 +98,8 @@
 
 ## Задачи за упражнение
 
+- [Permutations](https://leetcode.com/problems/permutations)
+- [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target)
 - [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary)
-
 
 Решения на задачите: [тук](/Tasks/tasks_15)
