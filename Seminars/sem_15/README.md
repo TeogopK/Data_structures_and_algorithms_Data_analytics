@@ -13,7 +13,7 @@
 
 Решения от [домашно 11](https://hackerrank.com/contests/sda-ad-hw-11-2023) - [тук](/Homeworks/hw_11).
 
-Решения от [контролно 6]() - [тук](/Exams/exam_06).
+Решения от [контролно 6](https://www.hackerrank.com/contests/sda-test6-2023-2024-ad23ed3) - [тук](/Exams/exam_06).
 
 ## Днес ще разгледаме
 
