@@ -1,7 +1,7 @@
 """Solution using DFS with recursion."""
 
 import sys
-sys.setrecursionlimit(100_000)
+sys.setrecursionlimit(int(1e5))
 
 def dfs(current, visited, graph):
     for neighbor in graph[current]:
@@ -17,7 +17,10 @@ def count_areas(graph):
     for vertex in graph:
         if vertex in visited:
             continue
+
+        visited.add(vertex)
         dfs(vertex, visited, graph)
+        
         count += 1
 
     return count
@@ -35,5 +38,3 @@ for _ in range(Q):
         graph[y].add(x)
         
     print(count_areas(graph), end=' ')
-        
-    
