@@ -10,7 +10,7 @@ def find(x, parents):
 
     return furthest_parent
 
-def union(x, y, parents, rank):
+def union(x, y, parents):
     x_root = find(x, parents)
     y_root = find(y, parents)
 
@@ -23,11 +23,10 @@ Q = int(input())
 queries = (tuple(map(int, input().split())) for _ in range(Q))
 
 def solve(V, edges, queries):
-    rank = [0] * (V + 1)
     parents = [v for v in range(V + 1)]
     
     for x, y in edges:
-        union(x, y, parents, rank)
+        union(x, y, parents)
         
     for x, y in queries:
         is_connected = find(x, parents) == find(y, parents)
@@ -36,4 +35,3 @@ def solve(V, edges, queries):
 
     
 solve(N, edges, queries)
-
