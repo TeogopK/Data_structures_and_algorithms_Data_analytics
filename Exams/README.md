@@ -9,3 +9,4 @@
 - **предишен изпит 2023**
   - [*част 1*](https://www.hackerrank.com/contests/sda-exam-20222023-part-1) - решения [тук](final_exam_2023/part_01)
   - [*част 2*](https://www.hackerrank.com/contests/sda-exam-20222023-part-2) - решения [тук](final_exam_2023/part_02)
+- [**редовен изпит 2024**](https://www.hackerrank.com/contests/2023-2024-2) - решения [тук](final_exam_2024)
